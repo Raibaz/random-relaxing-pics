@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+	
+    <WebView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:layout_gravity="top"        
+        android:gravity="center"
+        android:keepScreenOn="true"
+        />
+        
+    <!-- 
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".20"
+        android:layout_gravity="top"
+        android:fitsSystemWindows="true" >
+
+        <RelativeLayout            
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+                        
+            <!-- Button
+                android:id="@+id/upvote_button"
+                style="?buttonBarButtonStyle"              
+                android:layout_width="100dp"               
+                android:layout_height="wrap_content"                                                                               
+                android:text="@string/upvote" /-->
+            
+            <Button
+                android:id="@+id/dummy_button"
+                style="?buttonBarButtonStyle"                
+                android:layout_height="wrap_content"
+                android:layout_width="180dp"                
+                android:layout_gravity="top"                                
+                android:text="@string/dummy_button" />
+            <!-- android:layout_toRightOf="@id/upvote_button"
+                android:layout_width="150dp"-->
+            
+            <Button
+                android:id="@+id/downvote_button"
+                style="?buttonBarButtonStyle"
+                android:layout_toRightOf="@id/dummy_button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"                
+                android:layout_gravity="top"                                
+                android:text="@string/downvote" />
+                                    
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

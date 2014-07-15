@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Random Relaxing pics</string>
+    <string name="dummy_button" translatable="false">Another pic</string>
+    <string name="upvote" translatable="false">Upvote</string>
+    <string name="downvote" translatable="false">Broken/Wrong pic?</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="ad_unit_id" translatable="false">ca-app-pub-0134046674271031/6032198313</string>
+
+</resources>
